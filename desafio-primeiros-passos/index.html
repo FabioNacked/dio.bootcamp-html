@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Primeiros Passos com HTML</title>
+</head>
+<body>
+    
+    <h1><strong>Introdução ao HTML</strong></h1>
+    <hr />
+
+    <h2><strong>Iniciando com o HTML</strong></h2>
+    <p>Em sua essência, <a href="https://developer.mozilla.org/pt-BR/docs/Glossary/HTML" target="_blank">HTML</a> é uma linguagem bastante simples composta de <a href="https://developer.mozilla.org/pt-BR/docs/Glossary/Element" target="_blank">elementos</a>, que podem ser aplicados a pedaços de texto para dar-lhes significado diferente em um documento (é um parágrafo? é uma lista de seleção? é parte de uma tabela?), estrutura um documento em seções lógicas (Possui um cabeçalho? Três colunas de conteúdo? Um menu de navegação?) e incorpora conteúdo como imagens e vídeos em uma página. Este módulo irá introduzir os dois primeiros e apresentar conceitos fundamentais e a sintaxe que você precisa saber para entender o HTML.</p>
+
+    <blockquote>Texto tirado do site <a href="https://developer.mozilla.org/pt-BR/docs/Learn/HTML/Introduction_to_HTML/Getting_started" target="_blank">MDN Web Docs</a></blockquote>
+    <br>
+
+    <h4 id="menu">Menu</h4>
+    <ul>
+        <li><a href="#estrutura">Estrutura Básica do HTML</a></li>
+        <li><a href="#tags">Falando sobre as Tags</a></li>
+        <li><a href="#texto">Fundamentos do texto HTML</a></li>
+        <li><a href="#links">Criando hyperlinks</a></li>
+        <li><a href="#outrastags">Outras Tags</a></li>
+        <li><a href="#referencia">Referencias</a></li>
+    </ul>
+    <br>
+    <br>
+
+    <h2 id="estrutura">Estrutura Básica do HTML</h2>
+    
+    <p>Os arquivos HTML, por padrão são criados como <mark>index.html</mark>, esse arquivo indica essa é a sua página principal.</p>
+    <p>O HTML consiste básicamente em 3 partes:</p>
+    
+    <ol>
+        <li>Documento <strong>&lt;html&gt;</strong>(</li>
+        <li>Cabeçalho <strong>&lt;head&gt;</strong></li>
+        <li>Corpo <strong>&lt;body&gt;</strong></li>
+    </ol>
+    
+    <h3>Documento:</h3>
+    <p>O tipo de documento é identificado com a tag <strong>&lt;html&gt;</strong> e tem como principal função marcar e definir a estrutura de uma página na web.</p>
+    
+    <h3>Cabeçalho:</h3>
+    <p>O  cabeçalho (head en-US) de um documento HTML é a parte que não é exibida no navegador da Web quando a página é carregada. Ele contém informações como <strong>&lt;title&gt;</strong> , links para <strong>&lt;css&gt;</strong> (se você deseja modelar seu conteúdo HTML com CSS), links para favicons personalizados e outros metadados (dados sobre o HTML, como quem o escreveu, e palavras-chave importantes que descrevem o documento.).</p>
+    <p> cabeçalho HTML é o conteúdo do elemento <strong>&lt;head&gt;</strong> — ao contrário do conteúdo do elemento <strong>&lt;body&gt;</strong> (que são exibidos na página quando carregados no navegador), o conteúdo do cabeçalho não é exibido na página, em vez disso, o trabalho do cabeçalho é conter <a href="https://developer.mozilla.org/pt-BR/docs/Glossary/Metadata" target="_blank">metadados</a> sobre o documento.</p>
+    
+    <h3>Corpo:</h3>
+    <p>O corpo ( body en-US) de um documento HTML é a parte que é exibida no navegadro da web quando a página é carregada. Ele contém o conteúdo de um documento.</p>
+    <p>Corpo do HTML contém o elemento <strong>&lt;body&gt;</strong>, o conteúdo do corpo é exibido na página, o trabalho do corpo é conter a estrutura html do documento.</p>
+    
+    <small ><a href="#menu">(Voltar)</a></small>
+    <br>
+    <br>
+    <br>
+
+    <h2 id="tags">Falando sobre as Tags</h2>
+    
+    <h3>Tags</h3>
+    <p>As tags são usadas para informar ao navegador a estrutura do site. Ou seja: quando se escreve um código em HTML, as tags serão interpretadas pelo navegador, produzindo assim a estrutura e o conteúdo visual da página.</p>
+    <p>A principal característica das tags é estarem sempre dentro dos sinais de chevron (sinal de “maior que” e “menor que”), ou seja: &lt;&gt;.</p>
+    <p>As tags HTML são divididas em dois tipos: as que precisam de fechamento e as que não precisam de fechamento. As tags que precisam de fechamento possuem a sintaxe &lt;tag&gt; &lt;/tag&gt;, já as que não precisam de fechamento possuem como estrutura &lt;/tag&gt;.</p>
+    
+    <h3>Atributos das Tags</h3>
+    <p>Os atributos são usados para personalizar as tags, modificando sua estrutura ou funcionalidade. Igualmente, os atributos são utilizados para atribuir uma classe ou id a um elemento.</p>
+    
+    <small ><a href="#menu">(Voltar)</a></small>
+    <br>
+    <br>
+    <br>
+    
+    <h2 id="text">Fundamentos do texto HTML</h2>
+    
+    <p>Uma das principais funções do HTML é dar significado ao texto (também conhecido como <a href="https://developer.mozilla.org/pt-BR/docs/Glossary/Semantics">semântica</a>), para que o navegador saiba como exibi-lo corretamente.</p>
+    <p>Em HTML, por exemplo, o <strong>&lt;h1&gt;</strong> (en-US) é um elemento semântico, que fornece o texto que envolve a representação (ou o significado) de "um cabeçalho de nível superior em sua página".</p>
+    
+    <h3>O básico: Cabeçalhos e Parágrafos</h3>
+    <p>O texto mais estruturado é composto por títulos e parágrafos,esteja você lendo uma história, um jornal, um livro da faculdade, uma revista, etc.</p>
+    <p>O conteúdo estruturado torna a experiência de leitura mais fácil e mais agradável.</p>
+    <p>Em HTML, cada parágrafo deve ser envolvido em um elemento &lt;p&gt;.</p>
+    <p>Cada título deve ser envolvido em um elemento de &lt;h1&gt;.</p>
+    
+    <h3>Implementando hierarquia estrutural</h3>
+    <p>Como exemplo, em uma história, <mark>&lt;h1&gt;</mark> representaria o título da história, <mark>&lt;h2&gt;</mark> representaria o título de cada capítulo e <mark>&lt;h3&gt;</mark> representaria sub-seções de cada capítulo, e assim por diante.</p>
+    <br>
+    <br>
+    <p>
+        <mark>&lt;h1&gt;</mark><i>O furo esmagador</i><mark>&lt;/h1&gt;</mark>
+        <br>
+        <br>
+        &lt;p&gt;<i>Por Chris Mills</i>&lt;/p&gt;
+        <br>
+        <br>
+        <mark>&lt;h2&gt;</mark><i>Capítulo 1: A noite escura</i><mark>&lt;/h2&gt;</mark>
+        <br>
+        <br>
+        &lt;p&gt;<i>Era uma noite escura. Em algum lugar, uma coruja piou. A chuva caiu no chão ...</i>&lt;/p&gt;
+        <br>
+        <br>
+        <mark>&lt;h2&gt;</mark><i>Capítulo 2: O eterno silêncio</i><mark>&lt;/h2&gt;</mark>
+        <br>
+        <br>
+        &lt;p&gt;<i>Nosso protagonista não podia ver mais que um relance da figura sombria ...</i>&lt;/p&gt;
+        <br>
+        <br>
+        <mark>&lt;h3&gt;</mark><i>O espectro fala</i><mark>&lt;/h3&gt;</mark>
+        <br>
+        <br>
+        &lt;p&gt;<i>Várias horas se passaram, quando, de repente, o espectro ficou em pé e exclamou: "Por favor, tenha piedade da minha alma!"</i>&lt;/p&gt;
+    </p>
+    <br>
+    <br>
+    <p>Depende realmente de você, o quê, exatamente, representam os elementos envolvidos, desde que a hierarquia faça sentido. Você só precisa ter em mente algumas das melhores práticas ao criar tais estruturas:</p>
+    
+    <ul>
+        <li>Preferencialmente, você deve usar apenas um <u>&lt;h1&gt;</u> por página — esse é o título do nível superior e todos os outros ficam abaixo dele, na hierarquia.</li>
+        <li>Certifique-se de usar os títulos na ordem correta na hierarquia. Não use <u>&lt;h3&gt;</u> para representar subtítulos, seguido de <u>&lt;h2&gt;</u>para representar sub-subtítulos - isso não faz sentido e levará a resultados estranhos.</li>
+        <li>Dos seis níveis de cabeçalho disponíveis, você deve usar no máximo três por página, a menos que considere necessário usar mais. Documentos com vários níveis (ou seja, uma hierarquia profunda de cabeçalho) tornam-se difíceis de navegar. Nessas ocasiões, é aconselhável espalhar o conteúdo por várias páginas, se possível.</li>
+    </ul>
+    
+    <small ><a href="#menu">(Voltar)</a></small>
+    <br>
+    <br>
+    <br>
+    
+    <h2 id="links">Criando hiperlinks</h2>
+    
+    <p>Os hiperlinks são uma das inovações mais interessantes que a Web oferece. Bem, eles são uma característica da Web desde o início, mas são o que torna a Web como ela é — eles nos permitem vincular nossos documentos a qualquer outro documento (ou outro recurso) que queremos. Também podemos vincular para partes específicas de documentos e podemos disponibilizar aplicativos em um endereço web simples (em contraste com aplicativos nativos, que devem ser instalados e tantas outras coisas). Qualquer conteúdo da web pode ser convertido em um link, para que, quando clicado (ou ativado de outra forma) fará com que o navegador vá para outro endereço (<a href="https://developer.mozilla.org/pt-BR/docs/Glossary/URL" target="_blank">URL</a>).</p>
+    
+    <h3>Anatomia de um link</h3>
+
+    <p>Um link básico é criado envolvendo o texto (ou outro conteúdo, veja Block level links) que você quer transformar em um link dentro de um elemento <a>, e dando-lhe um atributo href, (também conhecido como Hypertext Reference, ou target) que conterá o endereço da Web para o qual você deseja que o link aponte.</p>
+        
+        <p><strong>exemplo</strong></p>
+        
+        &lt;p&gt;Estou criando um link para <br>
+        &lt;a href="https://www.mozilla.org/pt-BR/">a página inicial da Mozilla&lt;/a&gt;. <br>
+        &lt;/p&gt;
+        <br>
+        <br>
+        <p>Isso nos dá o seguinte resultado:</p>
+        
+    <p>Estou criando um link para <a href="https://www.mozilla.org/pt-BR/">a página inicial da Mozilla</a></p>
+
+    <small ><a href="#menu">(Voltar)</a></small>
+    <br>
+    <br>
+    <br>
+    
+    <h2 id="outrastags">Outras Tags HTML</h2>
+
+    <h3>Tag HTML &lt;font&gt;</h3>
+    <p>A tag &lt;font&gt; <sub>, não suportado em HTML5.</sub>foi usada no HTML 4 para especificar a face da fonte, o tamanho da fonte e a cor do texto.</p>
+    
+    <u><p>O que usar em vez disso?</p></u>
+
+    <p><strong>Exemplo:</strong></p>
+    <p>Defina a fonte do texto (com CSS):</p>
+    
+    <p><mark>&lt;p style = "font-family:verdana"&gt; This is a paragraph. &lt;/p&gt;</mark></p>
+
+    <p><strong>Resultado:</strong></p>
+    <p style="font-family:verdana">This is a paragraph.</p>
+    
+    <h3>Tag HTML &lt;del&gt;</h3>
+    <p>A &lt;del&gt;tag define o texto que foi excluído de um documento. Os navegadores geralmente riscam uma linha através do texto excluído.</p>
+
+    <p><strong>Exemplo:</strong></p>
+
+    <p>Minha cor favorita é <del>azul</del> <ins>vermelha</ins>!</p>
+
+    <h3>Tag HTML &lt;abbr&gt;</h3>
+    <p>A abbr&gt;tag define uma abreviação ou um acrônimo, como "HTML", "CSS", "Mr.", "Dr.", "ASAP", "ATM".</p>
+
+    <p><strong>Exemplo:</strong></p>
+    <p>A <abbr title="World Health Organization">WHO</abbr> foi fundada em 1948.</p>
+    <p>Passe o mouse em cima da abreviação sublinhada.</p>
+    <small ><a href="#menu">(Voltar)</a></small>
+    <br>
+    <br>
+    <br>
+
+    <h4 id="referencia">Referencias</a></h4>
+    <p>Essa página foi elaborada com base de referencia, os sites da <a href="https://www.w3schools.com/">w3schools</a> e <a href="https://developer.mozilla.org/">mdn web docs</a>.</p>
+</body>
+</html>
