@@ -4,41 +4,156 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+
     <title>Desafio ampliando o conhecimento HTML</title>
-    <link rel="stylesheet" href="css/style.css">
+    
 </head>
 <body>
-
-    <div>   
+       
+    <header>
         <div class="logo">
-            <img src="assets/images/logo.png" width="200"/>
+            <img src="images/wikipedia/wikipedia.png" alt="logo do cabeçalho" width="100px"/>
+            <span>Wikipédia</span>
         </div>
-    </div>
-
+        
+        <span class="pesquisaBar">
+            <input type="search" name="pesquisar" id="pesquisar" placeholder="Pesquisar na Wikipédia">
+            <button type="submit">Pesquisar</button>
+        </span>
+    </header>
+    
     <div class="bar"></div>
 
-    <div class="content">
-        <div class="sidebar">
-            <h2>Título</h2>
-            <ul>
-                <li><a href="#">Links</a></li>
-            </ul>
-        </div>
+    <main>
+        <div class="content">
+            <div class="sidebar">
+                <nav>
+                    <h2>Artigos em destaque</h2>
+                    <ul>
+                        <li><a href="#sega">Sega CD</a></li>
+                    </ul>
 
-        <div class="main">
+                    <h2>Eventos atuais</h2>
+                    <ul>
+                        <li><a href="#rainha">Rainha do Reino Unido Isabel II,<br> morre aos 96 anos.</a></li>
+                        <br>
+                        <li><a href="#liz-truss">Liz Truss assume cargo de <br> primeira-ministra do Reino Unido.</a></li>
+                        <br>
+                        <li><a href="#sismo">Sismo de magnitude 6,6 atinge <br> a província chinesa de Sichuan.</a></li>
+                        <br>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="main">
+                <h1>Boas-vindas à Wikipédia</h1>
+                <br>
+                <br>
+                <hr>
+
+                <p id="sega"><a href="https://pt.wikipedia.org/wiki/Sega_CD" target="_blank"><strong>Sega CD</strong></a> é um acessório baseado em CD-ROM para o Mega Drive projetado e produzido pela Sega como parte da quarta geração de consoles de jogos eletrônicos. Foi lançado em 12 de dezembro de 1991 no Japão, 15 de outubro de 1992 na América do Norte e 2 de abril de 1993 na Europa. O Sega CD reproduz jogos baseados em CD e adiciona funcionalidades de hardware, como uma unidade de processamento central mais rápida e aprimoramentos gráficos, como escalonamento e rotação de sprites. Ele também pode reproduzir CDs de áudio e discos CD+G.</p>
+
+                <figure>
+                    <img src="images/sega-cd/Sega-CD-Model1-Set.jpg" alt="imagem sega cd">
+                </figure>
+
+                <p> principal benefício da tecnologia dos CDs era o maior armazenamento, permitindo que os jogos fossem quase 320 vezes maiores do que os cartuchos de Mega Drive. Este benefício se manifestou com jogos full motion video (FMV), como o polêmico Night Trap, que se tornou o foco das audiências do Senado dos Estados Unidos sobre jogos eletrônicos em 1993. A Sega of Japan fez uma parceria com a JVC para projetar o Sega CD e se recusou a consultar a Sega of America até que o projeto fosse concluído. A Sega of America montou peças de várias unidades réplicas, ou "dummy", para obter um protótipo funcional. Ele foi redesenhado várias vezes pela Sega e desenvolvedores licenciados de terceiros. <strong>(</strong><a href="sega.html" >leia mais...</a><strong>)</strong></p>
+                
+                <br>
+                <hr>
+                <br>
+
+                <p id="rainha"><a href="https://pt.wikipedia.org/wiki/Morte_e_funeral_de_Isabel_II_do_Reino_Unido" target="_blank"><strong>Isabel II</strong></a> (em inglês: Elizabeth II), então rainha do Reino Unido, morreu aos 96 anos em 8 de setembro de 2022 no Castelo de Balmoral. No início do dia, os médicos relataram que sua saúde estava se deteriorando rapidamente e a colocaram sob supervisão médica.</p>
+
+                <figure>
+                    <img src="images/wikipedia/Morte_de_Isabel_II_do_Reino_Unido.png" alt="imagem ultima foto da rainha elizabeth segundo" width="300px">
+                    <figcaption>Uma das últimas fotos de Isabel II, dois dias anterior a sua morte, em que ela apareceu com uma mancha em sua mão</figcaption>
+                </figure>
+
+                <p>Em 8 de setembro de 2022, aproximadamente às 12h30min do horário local (BST), o Palácio de Buckingham anunciou que a rainha estava sob supervisão médica em Balmoral depois que os médicos expressaram preocupação. A declaração dizia: "Após uma avaliação mais aprofundada esta manhã, os médicos da rainha estão preocupados com a saúde de Sua Majestade e recomendaram que ela permaneça sob supervisão médica. A rainha permanece confortável em Balmoral". Os quatro filhos da rainha, juntamente com suas noras, e o príncipe William e o príncipe Harry, viajaram para ficar com ela.</p>
+
+                <p>Sua morte foi confirmada às 18h31min BST.<strong>(</strong><a href="rainha.html">leia mais...</a><strong>)</strong></p>
+                
+                <br>
+                <hr>
+                <br>
+
+                <p id="liz-truss">A <a href="https://pt.wikipedia.org/wiki/Elei%C3%A7%C3%A3o_de_lideran%C3%A7a_do_Partido_Conservador_de_2022" target="_blank"><strong>eleição da liderança do Partido Conservador de 2022</strong></a> foi realizada de julho de 2022 até o início de setembro de 2022 para determinar o sucessor de Boris Johnson como líder do Partido Conservador.</p>
+
+                <p>Em julho de 2022, o maior número de ministros do governo renunciou na história britânica e muitos deputados anteriormente favoráveis pediram que Johnson renunciasse após o escândalo de Chris Pincher, culminando em uma crise do governo. Como resultado, em 7 de julho de 2022, Johnson anunciou que renunciaria ao cargo de líder do partido, mas disse que permaneceria no líder do partido e primeiro-ministro até que um sucessor fosse escolhido.</p>
+
+                <figure>
+                    <img src="images/wikipedia/Liz_Truss_Official_Portrait.jpg" alt="imagem liz truss" width="300px">
+                    <figcaption>Líder do partido e primeira-ministra, Liz Truss.</figcaption>
+                </figure>
+
+                <p>A votação ocorreu entre 13 de julho e 2 de setembro. Após uma série de votações no parlamento, a lista de candidatos foi reduzida a Liz Truss, até então Secretária de Relações Exteriores e Ministra da Igualdade sob a liderança de Boris; e Rishi Sunak, que atuou como Chanceler do Tesouro até 5 de julho. Em 5 de setembro, Truss foi eleita para liderar o partido e assumiu o cargo de primeira-ministra em 6 de setembro.<strong>(</strong><a href="liz-truss.html">leia mais...</a><strong>)</strong></p>
+
+                <br>
+                <hr>
+                <br>
+
+                <p id="sismo">O <a href="https://pt.wikipedia.org/wiki/Sismo_de_Luding_de_2022" target="_blank"><strong>sismo de Luding de 2022</strong></a> foi um sismo de magnitude 6,6 ou 6,8 que atingiu o condado de Luding, na província de Sujuão, na China, em 5 de setembro de 2022, às 12h52, no horário local. O epicentro foi localizado a 226 km de Chengdu, ou a 43 km a sudeste de Kangding. Pelo menos 88 pessoas morreram, mais de 400 ficaram feridas e 30 continuam desaparecidas. Mais de 13 000 casas e outras infraestruturas foram danificadas ou destruídas. O sismo foi o maior a atingir a província desde o sismo de Jiuzhaigou, em 2017, e o mais mortal da região de Sujuão desde o sismo de Lushan, em 2013.<strong>(</strong><a href="sismo.html">leia mais...</a><strong>)</strong></p>
+
+                <figure>
+                    <img src="images/wikipedia/China_edcp_location_map.svg.png" alt="mapa Local do epicentro, em Sujuão, China." width="300px">
+                    <figcaption>Local do epicentro, em Sujuão, China.</figcaption>
+                </figure>
+
+                <br>
+                <hr>
+                <br>
+
+                <h2>Sobre a Wikipédia</h2>
+
+                <p>A <a href="https://pt.wikipedia.org/wiki/Wikip%C3%A9dia">Wikipédia</a>é um projeto de enciclopédia colaborativa, universal e multilíngue estabelecido na internet sob o princípio wiki. Tem como propósito fornecer um conteúdo livre, objetivo e verificável​​, que todos possam editar e melhorar. O projeto é definido pelos princípios fundadores e o conteúdo é disponibilizado sob a licença Creative Commons BY-SA e pode ser reutilizado sob a mesma licença, desde que respeitando os termos de uso. Todos podem publicar conteúdo on-line desde que criem uma conta e sigam as regras básicas, como verificabilidade ou notoriedade.</p>
+
+                <figure>
+                    <img src="images/wikipedia/wikipedia.png" alt="imagem Wikipédia">
+                </figure>
+
+                <p>Todos os editores da Wikipédia são voluntários e integram uma comunidade colaborativa, sem um líder, onde coordenam esforços em projetos temáticos e espaços de discussão. Dentre as várias páginas de ajuda à disposição, estão as que explicam como criar um artigo ou editar um artigo. Em caso de dúvidas, não hesite em perguntar. Debates e comentários sobre os artigos são bem-vindos. As páginas de discussão servem para centralizar reflexões e avaliações sobre como melhorar o conteúdo da Wikipédia.</p>
+                <br>
+                <br>
+                <br>
+
+            </div>
+
+            <div class="anchors">
+                <nav>
+                    <h2>Outros Artigos</h2>
+                    <ul>
+                        <li><a href="https://pt.wikipedia.org/wiki/Tentativa_de_assassinato_de_Cristina_Kirchner" target="_blank">A tentativa de assassinato de Cristina Kirchner</a>,</li>
+                        <br>
+                        <li><a href="https://pt.wikipedia.org/wiki/%C3%8Dndio_do_Buraco" target="_blank">Encontrado morto Índio do Buraco.</a></li>
+                        <br>
+                        <li><a href="https://pt.wikipedia.org/wiki/Invas%C3%A3o_da_Ucr%C3%A2nia_pela_R%C3%BAssia_em_2022" target="_blank">Invasão da Ucrânia pela Rússia em 2022</a></li>
+                        <br>
+                        <li><a href="https://pt.wikipedia.org/wiki/Surto_de_var%C3%ADola_dos_macacos_em_2022" target="_blank">Surto de varíola dos macacos em 2022</a></li>
+                        <br>
+                        <li><a href="https://pt.wikipedia.org/wiki/Jos%C3%A9_Liberal_de_Castro" target="_blank">José Liberal de Castro</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <p>Esta página foi editada pela última vez às 16h06min de 19 de julho de 2022.</p>
+
+            <p>Este texto é disponibilizado nos termos da licença Atribuição-CompartilhaIgual 3.0 Não Adaptada (CC BY-SA 3.0) da Creative Commons; pode estar sujeito a condições adicionais. Para mais detalhes, consulte as condições de utilização.</p>
             
+            <span>Política de privacidade</span>
+            <span>Sobre a Wikipédia</span>
+            <span>Avisos gerais</span>
+            <span>Versão móvel</span>
+            <span>Programadores</span>
+            <span>Estatísticas</span>
+            <span>Declaração sobre "cookies"</span>
         </div>
-
-        <div class="anchors">
-            <h2>Neste Artigo</h2>
-            <ul>
-                <li><a href="#">Âncoras</a></li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="footer">
-
-    </div>
+    </footer>
 </body>
 </html>
